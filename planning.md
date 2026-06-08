@@ -98,31 +98,30 @@ For this homework project, `all-MiniLM-L6-v2` is a strong choice because it is c
 ## Architecture
 
 ```mermaid
-flowchart LR
-  A[Document Ingestion]
-  B[Chunking]
-  C[Embedding + Vector Store]
-  D[Retrieval]
-  E[Generation]
-
-  A --> B
-  B --> C
-  C --> D
-  D --> E
-
-  subgraph tools [ ]
-    A1[Python script / markdown loader]
-    B1[chunk_text(tokens=400, overlap=80)]
-    C1[all-MiniLM-L6-v2 embeddings + vector DB]
-    D1[top-6 similarity search]
-    E1[LLM prompt + source attribution]
+flowchart TD
+  subgraph ingest["Ingestion pipeline (offline) — ingest.py"]
+    direction TB
+    A["Raw Markdown documents<br/>documents/raw_material/ (80 files)"]
+    B["Load + normalize text<br/>normalize_text()"]
+    C["Chunk text<br/>400-token window, 80-token overlap"]
+    D["Embed chunks<br/>all-MiniLM-L6-v2 (384-dim)"]
+    A --> B --> C --> D
   end
 
-  A --> A1
-  B --> B1
-  C --> C1
-  D --> D1
-  E --> E1
+  E[("Chroma vector store<br/>collection: home_finance<br/>163 chunks")]
+  D --> E
+
+  subgraph query["Query pipeline (online) — app.py"]
+    direction TB
+    Q["User question<br/>(English / Chinese)"]
+    R["Retrieve top-k = 6 chunks<br/>retrieve_chunks()"]
+    F["Format context<br/>[Chunk N from source]"]
+    G["Generate grounded answer<br/>Groq llama-3.3-70b-versatile (temp 0.3)"]
+    H["Response<br/>answer + cited source documents"]
+    Q --> R --> F --> G --> H
+  end
+
+  E -. semantic search .-> R
 ```
 
 ---
