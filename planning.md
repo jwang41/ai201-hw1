@@ -142,7 +142,19 @@ flowchart TD
      with my specified chunk size and overlap" is a plan. -->
 
 **Milestone 3 — Ingestion and chunking:**
+- *Tool:* Claude (Claude Code).
+- *Input I'll give it:* The Documents and Chunking Strategy sections of this file — specifically the source directory `documents/raw_material/`, the 400-token chunk size, and the 80-token overlap. I'll ask it to implement `ingest.py` with a markdown loader, a whitespace `normalize_text()` step, and a `chunk_text()` sliding-token-window function, writing each chunk with `source_path`/`chunk_index` metadata.
+- *Expected output:* `ingest.py` (plus a standalone `chunk_text_strategy.py`) that loads all `.md` files, chunks them to 400/80, and prints the per-document and total chunk counts.
+- *How I'll verify:* Run `python ingest.py` and confirm it loads 80 documents, that chunk counts look right for the document lengths, and spot-check that a known rule (e.g. "3–6 months", "4%") is not split across a chunk boundary.
 
 **Milestone 4 — Embedding and retrieval:**
+- *Tool:* Claude (Claude Code).
+- *Input I'll give it:* The Retrieval Approach section — embedding model `all-MiniLM-L6-v2`, top-k = 6, and the requirement that results carry source attribution. I'll ask it to embed chunks into a persistent Chroma collection and implement `retrieve_chunks()` / `retrieve_and_format()`.
+- *Expected output:* Chroma ingestion via `SentenceTransformerEmbeddingFunction`, plus `retrieval.py` returning the top-6 chunks with `id`, `source`, `chunk_index`, `text`, and `distance`.
+- *How I'll verify:* Run the 5 evaluation questions through retrieval and confirm the top chunk for each comes from the expected document. (This is exactly how I caught two bugs — a collection-name mismatch and a metadata-key mismatch that made every `source` return `unknown` — which I then directed Claude to fix so attribution returns real document names.)
 
 **Milestone 5 — Generation and interface:**
+- *Tool:* Claude (Claude Code).
+- *Input I'll give it:* The Domain section (for tone) and the grounding requirement — answer only from retrieved context, refuse when context is insufficient, and cite source documents. I'll ask it to implement `generation.py` (Groq `llama-3.3-70b-versatile`, temp 0.3) and an `app.py` Gradio interface wiring retrieval → generation.
+- *Expected output:* A `SYSTEM_PROMPT` enforcing grounding, `build_grounded_prompt()`, `generate_answer()` returning answer + sources + grounding flag, and source attribution surfaced both inline (cited by document name) and programmatically (an appended `Sources:` line).
+- *How I'll verify:* Run `python generation.py --evaluate` on the 5 test questions and check each answer is grounded, cites the right document(s), and that an out-of-scope question triggers the refusal response rather than a hallucinated answer.
