@@ -21,16 +21,16 @@ This project focuses on home finance investment for families, including househol
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | 现金流预算 | Home finance budgeting guide | `hw1/raw_material/家庭财务基础/现金流预算.md` |
-| 2 | 净资产追踪 | Net worth tracking for household finance | `hw1/raw_material/家庭财务基础/净资产追踪.md` |
-| 3 | 紧急基金 | Emergency fund planning for families | `hw1/raw_material/家庭财务基础/紧急基金.md` |
-| 4 | 保险规划总纲 | Insurance planning overview | `hw1/raw_material/家庭财务基础/保险规划总纲.md` |
-| 5 | 债务管理 | Debt repayment and credit management | `hw1/raw_material/补充-家庭财务/债务管理.md` |
-| 6 | 教育规划与风险管理 | Education savings and risk management | `hw1/raw_material/补充-家庭财务/教育规划与风险管理.md` |
-| 7 | 应税账户基础 | Taxable investment account fundamentals | `hw1/raw_material/补充-账户提取赠与/应税账户基础.md` |
-| 8 | 遗产赠与税-提取策略 | Estate, gifting, and withdrawal strategy | `hw1/raw_material/补充-账户提取赠与/遗产赠与税-提取策略.md` |
-| 9 | 4%规则与安全提取率 | Sustainable retirement withdrawal rules | `hw1/raw_material/退休规划/4%规则与安全提取率.md` |
-| 10 | Backdoor-Roth-IRA | Roth IRA conversion and tax-efficient retirement planning | `hw1/raw_material/退休账户/Backdoor-Roth-IRA.md` |
+| 1 | 现金流预算 | Home finance budgeting guide | `./documents/raw_material/家庭财务基础/现金流预算.md` |
+| 2 | 净资产追踪 | Net worth tracking for household finance | `./documents/raw_material/家庭财务基础/净资产追踪.md` |
+| 3 | 紧急基金 | Emergency fund planning for families | `./documents/raw_material/家庭财务基础/紧急基金.md` |
+| 4 | 保险规划总纲 | Insurance planning overview | `./documents/raw_material/家庭财务基础/保险规划总纲.md` |
+| 5 | 债务管理 | Debt repayment and credit management | `./documents/raw_material/补充-家庭财务/债务管理.md` |
+| 6 | 教育规划与风险管理 | Education savings and risk management | `./documents/raw_material/补充-家庭财务/教育规划与风险管理.md` |
+| 7 | 应税账户基础 | Taxable investment account fundamentals | `./documents/raw_material/补充-账户提取赠与/应税账户基础.md` |
+| 8 | 遗产赠与税-提取策略 | Estate, gifting, and withdrawal strategy | `./documents/raw_material/补充-账户提取赠与/遗产赠与税-提取策略.md` |
+| 9 | 4%规则与安全提取率 | Sustainable retirement withdrawal rules | `./documents/raw_material/退休规划/4%规则与安全提取率.md` |
+| 10 | Backdoor-Roth-IRA | Roth IRA conversion and tax-efficient retirement planning | `./documents/raw_material/退休账户/Backdoor-Roth-IRA.md` |
 
 ---
 
