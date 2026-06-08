@@ -17,6 +17,24 @@ from pathlib import Path
 
 from groq import Groq
 
+# Load GROQ_API_KEY (and any other vars) from the .env file next to this
+# module so it does not have to be exported into the shell manually. The
+# explicit path makes this work regardless of the current working directory.
+try:
+    from dotenv import load_dotenv
+
+    load_dotenv(Path(__file__).resolve().parent / ".env")
+except ImportError:
+    # python-dotenv not installed: fall back to a minimal .env parser so the
+    # key is still picked up (pip install -r requirements.txt for the real thing).
+    _env_path = Path(__file__).resolve().parent / ".env"
+    if _env_path.exists():
+        for _line in _env_path.read_text(encoding="utf-8").splitlines():
+            _line = _line.strip()
+            if _line and not _line.startswith("#") and "=" in _line:
+                _k, _v = _line.split("=", 1)
+                os.environ.setdefault(_k.strip(), _v.strip())
+
 
 # System prompt enforcing grounding and source attribution
 SYSTEM_PROMPT = """You are a helpful household finance advisor. Your role is to answer questions about household investment strategy, tax planning, insurance, debt management, retirement, and estate planning based ONLY on the provided context.
