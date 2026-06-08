@@ -36,7 +36,7 @@ def get_chroma_client():
 
 def retrieve_chunks(
     query: str,
-    collection_name: str = "household_finance",
+    collection_name: str = "home_finance",
     top_k: int = 6,
 ) -> List[Dict]:
     """
@@ -72,19 +72,22 @@ def retrieve_chunks(
         include=["documents", "metadatas", "distances"]
     )
 
-    # Parse results into structured format with source attribution
+    # Parse results into structured format with source attribution.
+    # Note: ingest.py stores metadata under "source_path"/"chunk_index" and the
+    # stable chunk id in Chroma's top-level ids field, so read from there.
     retrieved = []
     if results["documents"] and len(results["documents"]) > 0:
-        for i, (doc, metadata, distance) in enumerate(
+        for i, (chunk_id, doc, metadata, distance) in enumerate(
             zip(
+                results["ids"][0],
                 results["documents"][0],
                 results["metadatas"][0],
                 results["distances"][0]
             )
         ):
             retrieved.append({
-                "id": metadata.get("id", f"unknown_{i}"),
-                "source": metadata.get("source", "unknown"),
+                "id": chunk_id,
+                "source": metadata.get("source_path", metadata.get("source", "unknown")),
                 "chunk_index": metadata.get("chunk_index", i),
                 "text": doc,
                 "distance": distance,

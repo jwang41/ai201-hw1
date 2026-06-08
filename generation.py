@@ -25,12 +25,12 @@ SYSTEM_PROMPT = """You are a helpful household finance advisor. Your role is to 
 1. Base all answers ONLY on the retrieved context provided in the user message.
 2. Do NOT use external knowledge, assumptions, or information outside the context.
 3. If the context does not contain sufficient information to answer the question, respond with: "I don't have information about that in the knowledge base. The context provided does not cover this topic."
-4. Cite specific chunks when possible (e.g., "According to the material on Backdoor Roth IRAs...").
+4. Cite the source document(s) your answer comes from. Each context chunk is labeled with its source in a header like "[Chunk 1 from documents/retirement.md]". When you state a fact, name the document it came from (e.g., "According to retirement.md, ...").
 5. If the user asks for advice beyond the scope of the provided context, decline politely and explain what the knowledge base covers.
 
 **OUTPUT FORMAT:**
 - First paragraph: Direct answer to the question (1-2 sentences)
-- Following paragraphs: Detailed explanation with specific details from the context
+- Following paragraphs: Detailed explanation with specific details from the context, naming the source document for each key claim
 - End with a confidence note if the answer is partially incomplete or requires additional context
 
 Always maintain a professional, advisory tone suitable for household financial planning."""
@@ -86,7 +86,7 @@ USER QUESTION:
 INSTRUCTIONS:
 - Answer the user's question ONLY using the retrieved context above.
 - If the context does not answer the question, say so explicitly.
-- Reference the specific chunks (e.g., "Chunk 1", "Chunk 3") when citing information.
+- Cite the source document by name when stating a fact. Each chunk header shows its source as "[Chunk N from <source>]" — refer to that source name (e.g., "According to retirement.md, ...") rather than the chunk number.
 - Maintain professional advisory tone suitable for household financial planning.
 - If the answer requires multiple steps or considerations, organize them clearly.
 
@@ -115,8 +115,9 @@ def generate_answer(
     
     Returns:
         Dict with keys:
-            - "answer": str (LLM response)
-            - "sources": List[str] (formatted source attribution)
+            - "answer": str (LLM response, with a "**Sources:**" attribution line appended)
+            - "sources": List[str] (formatted per-chunk source attribution)
+            - "source_documents": List[str] (unique document names the answer drew from)
             - "query": str (original query)
             - "grounded": bool (True if answer generated from context)
             - "model": str (model used)
@@ -163,10 +164,18 @@ def generate_answer(
 
         # Extract source attribution
         sources = _format_sources(source_chunks)
+        source_documents = _unique_source_names(source_chunks)
+
+        # Programmatically append source attribution to the answer so the
+        # response always names the document(s) it came from, even if the
+        # model omitted an inline citation.
+        if source_documents:
+            answer_text += "\n\n**Sources:** " + ", ".join(source_documents)
 
         return {
             "answer": answer_text,
             "sources": sources,
+            "source_documents": source_documents,
             "query": query,
             "grounded": True,
             "model": model,
@@ -204,6 +213,32 @@ def _format_sources(source_chunks: List[Dict]) -> List[str]:
         chunk_id = chunk.get("id", f"chunk_{i}")
         sources.append(f"Chunk {i}: {source_path} (ID: {chunk_id})")
     return sources
+
+
+def _unique_source_names(source_chunks: List[Dict]) -> List[str]:
+    """
+    Extract the unique source document names from the retrieved chunks,
+    preserving the order in which they were retrieved.
+
+    Used to programmatically attribute the answer to the document(s) it came
+    from. Paths are reduced to their base file name for readability
+    (e.g., "documents/retirement.md" -> "retirement.md").
+
+    Args:
+        source_chunks (List[Dict]): List of chunk dicts from retrieval.retrieve_chunks()
+
+    Returns:
+        List[str]: Unique document names in retrieval order
+    """
+    seen = set()
+    names = []
+    for chunk in source_chunks:
+        source_path = chunk.get("source", "unknown")
+        name = os.path.basename(source_path) or source_path
+        if name not in seen:
+            seen.add(name)
+            names.append(name)
+    return names
 
 
 def format_response(result: Dict) -> str:
