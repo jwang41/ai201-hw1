@@ -9,7 +9,7 @@
 
 ## Domain
 
-<!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
+This project covers home finance investment knowledge for families, including household investment strategy, tax-aware account selection, insurance planning, debt management, estate and gifting strategy, and retirement withdrawal planning. This knowledge is valuable because it helps households make better investment and savings decisions over the long term, and it is hard to find through official channels because investment guidance is often scattered across tax rules, insurance sales materials, retirement plan summaries, and general financial advice rather than being integrated into a family-focused home finance investment context.
 
 ---
 
@@ -20,16 +20,16 @@
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | 现金流预算 | Practical guidance for household budgeting and expense planning. | `hw1/raw_material/家庭财务基础/现金流预算.md` |
+| 2 | 净资产追踪 | Methods for tracking assets, liabilities, and long-term net worth growth. | `hw1/raw_material/家庭财务基础/净资产追踪.md` |
+| 3 | 紧急基金 | Frameworks for sizing and maintaining a household emergency reserve. | `hw1/raw_material/家庭财务基础/紧急基金.md` |
+| 4 | 保险规划总纲 | Overview of insurance categories and how they protect family financial goals. | `hw1/raw_material/家庭财务基础/保险规划总纲.md` |
+| 5 | 债务管理 | Strategies for prioritizing debt repayment and reducing borrowing costs. | `hw1/raw_material/补充-家庭财务/债务管理.md` |
+| 6 | 教育规划与风险管理 | Planning for education costs and balancing savings with insurance risk controls. | `hw1/raw_material/补充-家庭财务/教育规划与风险管理.md` |
+| 7 | 应税账户基础 | Foundations of taxable investment accounts and when to use them. | `hw1/raw_material/补充-账户提取赠与/应税账户基础.md` |
+| 8 | 遗产赠与税-提取策略 | Estate, gifting, and account withdrawal strategies for household transfer planning. | `hw1/raw_material/补充-账户提取赠与/遗产赠与税-提取策略.md` |
+| 9 | 4%规则与安全提取率 | Retirement withdrawal rules for sustainable household spending after retirement. | `hw1/raw_material/退休规划/4%规则与安全提取率.md` |
+| 10 | Backdoor-Roth-IRA | Tax-aware retirement account planning and Roth conversion strategy. | `hw1/raw_material/退休账户/Backdoor-Roth-IRA.md` |
 
 ---
 

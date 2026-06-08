@@ -9,10 +9,7 @@
 
 ## Domain
 
-<!-- What topic or category of knowledge does your system cover?
-     Why is this knowledge valuable, and why is it hard to find through official channels?
-     Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+This project focuses on home finance investment for families, including household investment strategy, tax-aware account selection, insurance planning, debt management, estate planning, and retirement withdrawal strategy. The knowledge is hard to find through official channels because investment-related guidance is often fragmented across insurance providers, tax code summaries, retirement plan guides, and marketing materials instead of being integrated into a holistic family investment and home finance playbook.
 
 ---
 
@@ -24,16 +21,16 @@
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | 现金流预算 | Home finance budgeting guide | `hw1/raw_material/家庭财务基础/现金流预算.md` |
+| 2 | 净资产追踪 | Net worth tracking for household finance | `hw1/raw_material/家庭财务基础/净资产追踪.md` |
+| 3 | 紧急基金 | Emergency fund planning for families | `hw1/raw_material/家庭财务基础/紧急基金.md` |
+| 4 | 保险规划总纲 | Insurance planning overview | `hw1/raw_material/家庭财务基础/保险规划总纲.md` |
+| 5 | 债务管理 | Debt repayment and credit management | `hw1/raw_material/补充-家庭财务/债务管理.md` |
+| 6 | 教育规划与风险管理 | Education savings and risk management | `hw1/raw_material/补充-家庭财务/教育规划与风险管理.md` |
+| 7 | 应税账户基础 | Taxable investment account fundamentals | `hw1/raw_material/补充-账户提取赠与/应税账户基础.md` |
+| 8 | 遗产赠与税-提取策略 | Estate, gifting, and withdrawal strategy | `hw1/raw_material/补充-账户提取赠与/遗产赠与税-提取策略.md` |
+| 9 | 4%规则与安全提取率 | Sustainable retirement withdrawal rules | `hw1/raw_material/退休规划/4%规则与安全提取率.md` |
+| 10 | Backdoor-Roth-IRA | Roth IRA conversion and tax-efficient retirement planning | `hw1/raw_material/退休账户/Backdoor-Roth-IRA.md` |
 
 ---
 
