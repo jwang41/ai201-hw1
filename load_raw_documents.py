@@ -80,6 +80,10 @@ def save_manifest(entries: list[dict], output_dir: Path) -> None:
 
 
 def main() -> None:
+    # Ensure UTF-8 encoding for console output (handles Chinese characters on Windows)
+    if sys.stdout.encoding != "utf-8":
+        sys.stdout.reconfigure(encoding="utf-8")
+    
     parser = argparse.ArgumentParser(description="Load raw documents into a consistent raw text format.")
     parser.add_argument("--source-dir", type=Path, default=DEFAULT_SOURCE_DIR, help="Directory containing local source documents.")
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR, help="Directory to save raw text files.")

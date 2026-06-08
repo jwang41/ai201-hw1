@@ -1,0 +1,93 @@
+# Foreign Tax Credit（境外税收抵免，Form 1116）
+
+**收集日期：** 2026-04-16
+
+## 来源
+
+- [IRS Form 1116](https://www.irs.gov/pub/irs-pdf/f1116.pdf)（官方）
+- [IRS: Instructions for Form 1116 (2025)](https://www.irs.gov/instructions/i1116)（官方）
+- [IRS: Foreign Tax Credit](https://www.irs.gov/individuals/international-taxpayers/foreign-tax-credit)（官方）
+- [IRS 2025 Instructions for Form 1116 PDF](https://www.irs.gov/pub/irs-pdf/i1116.pdf)（官方）
+- [Greenback: Form 1116 for Expats](https://www.greenbacktaxservices.com/knowledge-center/form-1116/)
+- [Universal Tax Professionals: 2026 Foreign Tax Credit (FTC) Guide](https://universaltaxprofessionals.com/foreign-tax-credit/)
+- [TurboTax: Claiming the Foreign Tax Credit with Form 1116](https://turbotax.intuit.com/tax-tips/military/filing-irs-form-1116-to-claim-the-foreign-tax-credit/L2ODfqp89)
+- [Tax Samaritan: Foreign Tax Credit For Expats](https://www.taxsamaritan.com/tax-article-blog/foreign-tax-credit-us-expats/)
+
+## 核心概念
+
+**Foreign Tax Credit（FTC）= 你在外国已缴所得税，可以抵扣美国税**。是美国人解决双重征税问题的**核心工具**，远比 [[中美税收协定]] 的优惠更实用。
+
+### 两种形式
+
+1. **Tax Credit（首选）**：外国税 × 100% 抵美国税（1 美元外国税抵 1 美元美国税）
+2. **Tax Deduction**（次选）：作为 itemized deduction（仅省 22-37% × 外国税）
+
+几乎总是选 Credit —— 每 $1 救 $1 > 每 $1 救 $0.30。
+
+## 适用条件
+
+### 四个必要条件
+
+1. 该税必须是**所得税性质**（Income Tax 或 in lieu of）
+2. 必须是**合法且实际已缴**
+3. 必须是**你本人的义务**
+4. 必须是**外国政府征收**
+
+### ✅ 符合
+
+- 中国个人所得税
+- 中国股息 / 利息预扣税（10%）
+- 加拿大、欧洲等国所得税
+
+### ❌ 不符合
+
+- 外国销售税、增值税（VAT）、房产税
+- 社保 / 医保缴费（除非与美国有社保总协定）
+- 外国赎回产品的退保费
+- 外国罚款 / 利息
+
+## 计算限制公式
+
+```
+FTC = min(
+    外国已缴税,
+    美国税 × (外国来源收入 / 全球应税收入)
+)
+```
+
+**含义**：你不能用外国税抵免"美国来源收入"上的税。
+
+### 示例
+
+- 美国应税收入：$100,000（总收入）
+  - 其中美国来源：$70,000
+  - 中国来源：$30,000
+- 美国税总额：$18,000
+- 中国已缴税：$6,000
+
+**限制**：
+```
+FTC 上限 = $18,000 × ($30,000 / $100,000) = $5,400
+```
+
+- 你只能抵 **$5,400**（美国）有利 | ✅ | ❌ |
+| 低税国（ $132k 或 高税国 → FTC 优
+
+## 与其他概念的关系
+
+- [[FBAR]]：报账户的同时报 FTC
+- [[Form-8938]]：一起申报
+- [[中美税收协定]]：理论减税但实际靠 FTC
+- [[PFIC]]：PFIC 的 FTC 有额外限制
+- [[双边资产策略]]：FTC 是双边核心工具
+
+## 待提炼为 wiki 条目
+
+**已提炼（2026-04-20）**：
+
+- [x] `wiki/中美对比/Foreign-Tax-Credit.md` — 限制公式 + 5 个 category + 4 个中国场景 + Re-source 协定条款
+- [x] `wiki/中美对比/FTC-vs-FEIE选择.md` — 适用范围对比 + 居住要求 + 4 种典型路径 + FEIE 5 年禁区
+- [x] `wiki/中美对比/FTC简化规则.md` — $300/$600 4 个条件 + 决策树 + 与 1099-DIV Box 6 对应
+
+**MOC 更新**：
+- [x] `wiki/中美对比/00-MOC-中美对比.md` 加入 3 条

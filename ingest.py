@@ -110,7 +110,6 @@ def create_chroma_collection(chunks: list[dict], collection_name: str, persist_d
     """Ingest chunks into a local Chroma collection using SentenceTransformer embeddings."""
     try:
         import chromadb
-        from chromadb.config import Settings
         from chromadb.utils import embedding_functions
     except ImportError as exc:
         raise ImportError(
@@ -119,7 +118,8 @@ def create_chroma_collection(chunks: list[dict], collection_name: str, persist_d
 
     persist_dir.mkdir(parents=True, exist_ok=True)
 
-    client = chromadb.Client(Settings(chroma_db_impl="duckdb+parquet", persist_directory=str(persist_dir)))
+    # Use the new Chroma PersistentClient API (works with chromadb >= 0.4)
+    client = chromadb.PersistentClient(path=str(persist_dir))
 
     embedding_function = embedding_functions.SentenceTransformerEmbeddingFunction(
         model_name=model_name,
@@ -136,7 +136,6 @@ def create_chroma_collection(chunks: list[dict], collection_name: str, persist_d
     metadatas = [chunk["metadata"] for chunk in chunks]
 
     collection.add(ids=ids, documents=documents, metadatas=metadatas)
-    client.persist()
 
 
 def main() -> None:

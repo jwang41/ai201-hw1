@@ -1,0 +1,196 @@
+# 净资产追踪（Net Worth Tracking）
+
+**收集日期：** 2026-04-16
+
+## 来源
+
+- [Accidentally Retired: Easy-to-Use Net Worth Spre
+- [Tiller: 9 Best Free Net Worth Spre
+- [Vertex42: Free Net Worth Calculator for Excel](https://www.vertex42.com/Calculators/net-worth.html)
+- [Rob Berger: 8 Best Net Worth Calculators in 2026](https://robberger.com/net-worth-calculators/)
+- [Johnny Africa: The Ultimate Net Worth, Budgeting, And FIRE Spre
+- [Millennial Money: Free Net Worth Spre
+- [Money Under 30: Free Net Worth Tracking Spre
+- [Well Kept Wallet: 10 Net Worth Spre
+
+## 核心概念
+
+**净资产（Net Worth）= 总资产 - 总负债**
+
+这是个人财务最重要的单一指标：
+- 工资是"流量"
+- **净资产是"存量"**
+- 财务独立的衡量标准
+
+追踪频率：**至少每季度**，理想是每月。
+
+## 公式拆解
+
+```
+Net Worth = Total Assets - Total Liabilities
+```
+
+### Total Assets（资产）
+
+#### 流动性资产（Liquid）
+- Checking / Savings / HYSA
+- Money Market Fund
+- SGOV / T-Bills
+- Checking 余额（减去下月账单）
+
+#### 投资资产（Investment）
+- Taxable Brokerage
+- 401K / 403(b) / 457
+- Tr
+- Roth IRA / Roth 401K
+- HSA（注意：部分 HSA 有自付医疗收据未报销）
+- SEP IRA / Solo 401K（如自雇）
+- 529 Plan（教育）
+
+#### 不动产（Real Estate）
+- 自住房（使用 Zillow 或 Redfin 估值）
+- 投资房
+- 土地
+
+#### 其他资产（Other）
+- 车辆（Kelley Blue Book 估值）
+- 珠宝、艺术品（保险估值）
+- 企业股权（私募）
+- 加密货币
+- 应收账款
+
+### Total Liabilities（负债）
+
+- 房贷（Mortgage）
+- HELOC / 二抵
+- 投资房房贷
+- 车贷
+- 学贷（Student Loans）
+- 信用卡余额（未还清的）
+- 医疗债务
+- 个人贷款
+- 税务欠款
+
+## 关键决策：如何估值
+
+### 投资账户
+
+使用**当前市值**（Market Value）—— 券商报表的数字。
+
+### 自住房
+
+**保守方法**：
+- 选 3 个来源（Zillow、Redfin、Realtor.com）
+- 取**中位数** 或 **最低值**
+- 减去**销售成本**（5-7% 中介费）
+
+**更保守**：
+- 用买入价 + 抵押本金已还部分
+- 完全忽略房价升值
+
+### 车辆
+
+Kelley Blue Book "Private Party Value"。**逐年折旧快**（前 5 年每年 15-20%）。
+
+### 加密货币
+
+当前汇率，但波动大。**考虑折算 50%** 为"保守净资产"（避免在高位对自己过度乐观）。
+
+### 保险现金价值
+
+- Term Life：$0（纯消费型）
+- Whole Life / IUL：**保单"现金价值"**（保险公司报表）
+- 注意："Cash Surrender Value"  50%：警戒
+```
+
+### 4. 跨年比较
+
+- 年度净资产增长 = 储蓄 + 投资回报 + 房产升值
+- 与收入对比（应 > 储蓄率）
+
+### 5. 心理作用
+
+- 看到曲线向上 → 坚持储蓄
+- 熊市看到下跌 → **不恐慌卖出**（追踪让你看到长期趋势）
+
+## 常见错误
+
+### 错误 1：不追踪
+
+"我大概知道"→ 实际不准确。写下来有质的差别。
+
+### 错误 2：过度粒度
+
+每天更新 → 焦虑。**每月一次够了**。
+
+### 错误 3：只看资产，不看负债
+
+欠款也是净资产的一部分，必须如实列出。
+
+### 错误 4：夸大房产价值
+
+按 Zillow 最高估 → 心理安慰但不真实。保守估值。
+
+### 错误 5：忘记税务折扣
+
+Tr
+
+### 错误 6：忽略小资产
+
+不要忘记：
+- HSA
+- 529（if applicable）
+- 雇主股票未归属（RSU Unvested）通常不计
+- 可归属未卖出股票（RSU Vested）计入
+
+## 双边家庭特殊情况
+
+### 中国资产
+
+- 中国银行余额（按最新汇率换 USD）
+- 中国房产（估值 + 汇率）
+- 中国社保余额（如查得到）
+- A 股 / 基金（按汇率）
+- **FBAR / Form 8938 申报的账户都应列入**
+
+### 汇率变化的影响
+
+- 中国资产占 30% 时，汇率 ±10% → 净资产 ±3%
+- 可考虑每年用**固定汇率**（如 7.0）做内部追踪，外部看汇率
+
+### 家庭成员资产
+
+- 配偶合并 or 分别？
+- **美国税务上**：MFJ 合并，MFS 分别
+- **家庭决策**：合并看总资产最有意义
+
+## 保留历史数据
+
+### 为什么重要
+
+- 10 年后看 10 年曲线 → 极大信心
+- 识别"好年 vs 坏年"模式
+- 量化"如果当初没存会怎样"
+- 继承规划（遗产清单）
+
+### 怎么做
+
+- 每月存档快照
+- 年度汇总表
+- 备份到云（Google Drive、iCloud）
+- **加密** 敏感数据（含账号数字）
+
+## 与其他概念的关系
+
+- [[紧急基金]]：净资产追踪显示流动性占比
+- [[现金流预算]]：收入支出对应资产增长
+- [[FIRE运动]]：FIRE 数字 vs 净资产比例
+- [[Asset-Location]]：不同账户比例显示税务效率
+- [[4%规则]]：净资产 × 4% = 可持续年消费
+
+## 待提炼为 wiki 条目
+
+- [x] `wiki/家庭财务/净资产追踪.md`
+- [x] `wiki/家庭财务/资产估值方法.md`
+- [x] `wiki/家庭财务/税务调整后净资产.md`
+- [x] `wiki/家庭财务/净资产工具对比.md`

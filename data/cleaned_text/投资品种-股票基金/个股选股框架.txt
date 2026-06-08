@@ -1,0 +1,182 @@
+# 个股选股框架（Buffett-Munger）
+
+**收集日期：** 2026-04-16
+
+## 来源
+
+- [Hey Gotr
+- [Yahoo Finance: Charlie Munger Strategy - Buy Quality Stocks](https://finance.yahoo.com/news/charlie-munger-strategy-buy-quality-140000015.html)
+- [Picture Perfect Portfolios: Charlie Munger Timeless Strategies](https://pictureperfectportfolios.com/charlie-mungers-timeless-strategies-for-stock-picking-revealed/)
+- [Value Research: How to pick stocks the Buffett & Munger way](https://www.valueresearchonline.com/stories/50508/how-to-pick-stocks-the-buffett-and-munger-way/)
+- [Moatifi: How Warren Buffett Picks Stocks - Complete Investment Checklist](https://moatifi.com/blog/how-warren-buffett-picks-stocks)
+- [Old School Value: The Warren Buffett Stock Strategy](https://www.oldschoolvalue.com/investing-strategy/warren-buffett-stock-strategy/)
+- [Grahamanddoddsville: Charlie Munger Art of Stock Picking PDF](https://www.grahamanddoddsville.net/wordpress/Files/Gurus/Charlie%20Munger/Charlie%20Munger%20_%20Art%20of%20Stock%20Picking.pdf)
+- [Neuberger Berman: Why Quality Is a Good Guide for Value Investing](https://www.nb.com/handlers/documents.ashx?id=c63e320b-685e-4ba8-a220-0e9
+- [Forth Capital: Charlie Munger's Filters](https://www.forthcapital.com/us/articles/charlie-mungers-essential-filters-that-we-apply-to-our-award-winning-investment-strategies)
+
+## 核心概念
+
+**个股选股 vs 指数投资**：
+- 90% 投资者应专注**被动指数**（见 [[主动vs被动投资]]）
+- 个股选股是**卫星仓**（总资产 10-20% 以内）
+- 目标：深度理解少数公司 + 长期持有 + 不看短期波动
+
+**Buffett-Munger 哲学**（Berkshire Hathaway 积累）：
+> "以合理价格买优秀公司" > "以便宜价格买平庸公司"
+
+## Munger 四大过滤器
+
+Charlie Munger 的"Essential Filters"：
+
+### 1. Economic Moat（经济护城河）
+
+**定义**：公司的持久竞争优势。
+
+**护城河类型**：
+- **品牌力**：Coca-Cola、Apple、LVMH
+- **网络效应**：Meta、Visa、PayPal
+- **转换成本**：Microsoft Office、医院 EPIC 系统
+- **规模经济**：Walmart、Amazon
+- **专利 / 监管壁垒**：大型制药、公用事业
+- **成本优势**：GEICO、Costco
+
+**没护城河的公司**：航空、大多数零售、大宗商品 → 避开。
+
+### 2. Good Management（优秀管理层）
+
+**判断标准**：
+- 诚信 / 坦诚（看股东信）
+- 资本配置能力（Returns on Invested Capital）
+- 长期视野（不追季度数字）
+- 与股东利益一致（合理薪酬、股票持有）
+
+**警惕信号**：
+- CEO 薪酬失衡（>1% 公司市值）
+- 频繁换 CEO
+- 季度"beating estimates"的痴迷
+- 过度并购
+
+### 3. Simple Business（简单业务）
+
+"如果你不能用**一句话**解释公司在做什么 → 跳过"
+
+**Buffett 偏好**：消费品、保险、铁路、公用事业
+**Buffett 避开**：深度科技（他承认不懂）
+
+**现代版 "Circle of Competence"**：
+- 软件工程师 → 可以理解 SaaS、云计算
+- 医生 → 可以理解药企、医疗器械
+- 不要跳出你懂的圈
+
+### 4. Margin of Safety（安全边际）
+
+**Benjamin Graham 核心原则**（Buffett 的老师）：
+
+```
+合理买入价 = 内在价值 × (1 - Margin of Safety)
+安全边际通常 25-40%
+```
+
+**估值方法**：
+- DCF（现金流折现）
+- P/E 与历史和同行对比
+- P/B（低估值价值股）
+- EV/EBITDA（大公司比较）
+
+## Buffett 选股检查单
+
+**10 项检查**：
+
+### 财务质量
+1. **ROE > 15%**（持续）—— 股东回报率
+2. **债务合理**（Debt/Equity  10%**
+5. **Operating Margin 稳定或上升**
+
+### 增长质量
+6. **EPS 过去 10 年 CAGR > 10%**
+7. **Revenue 稳定增长**
+8. **Dividend 稳定 / 增长**（视公司类型）
+
+### 估值
+9. **P/E 合理**（ "Our favorite holding period is forever." — Buffett
+
+长期持有的理由：
+- 减少交易成本和税
+- 复利最大化
+- 避免情绪驱动
+
+**实际执行**：
+- 定期复审（每年）
+- 基本面恶化（护城河消失）→ 卖
+- 估值极度高估 → 可以减仓（不清仓）
+
+### 何时卖
+
+**Buffett 的"卖出四条件"**（实际上很少卖）：
+1. 基本面恶化
+2. 管理层变差
+3. 极端高估
+4. 更好的机会（机会成本）
+
+## 常见错误
+
+### 错误 1：FOMO（Fear of Missing Out）
+- 追涨已暴涨的股票
+- 看朋友赚钱就跟
+- **解法**：有明确估值和仓位规则
+
+### 错误 2：低估风险
+- 把 20% 仓位放一只股票
+- 忽视行业集中度
+- **解法**：单股 10% 上限
+
+### 错误 3：过度交易
+- 短期消息干扰
+- 每天看盘
+- **解法**：年度复审，其他时间不看
+
+### 错误 4：忽略税务
+- 短期买卖触发普通所得税（联邦 37% + 加州 13.3%）
+- 频繁交易 = 税务杀手
+- **解法**：[[Asset-Location]]（IRA 内更活跃）
+
+### 错误 5：从不卖
+- 情感依恋（"这是我老东家"）
+- 护城河变坏也不承认
+- **解法**：年度客观评估
+
+## 加州居民特殊
+
+### 雇主股票集中度
+
+如果你在科技公司 + RSU：
+- **你已经严重集中** 在公司股票
+- 不应再买雇主同行业个股
+- → [[RSU]] vest 后立即卖掉 + 指数投资
+
+### 税务敏感
+
+- 每笔卖出都触发 联邦 + 加州税
+- 加州长期资本利得无优惠（13.3%）
+- → 少卖多持有
+
+### Direct Indexing 替代
+
+- 想要"个股"感 + 税损收割 → Direct Indexing
+- Wealthfront / Fidelity 提供
+
+## 与其他概念的关系
+
+- [[主动vs被动投资]]：个股是主动的极端
+- [[税损收割]]：个股组合可做
+- [[RSU]]：雇主股票已经集中
+- [[杠杆ETF]]：不同极端
+- [[Asset-Location]]：个股放哪
+
+## 待提炼为 wiki 条目
+
+- [ ] `wiki/投资品种/Buffett-Munger框架.md`
+- [ ] `wiki/投资品种/Economic-Moat.md`
+- [ ] `wiki/投资品种/Margin-of-Safety.md`
+- [ ] `wiki/投资品种/Dividend-Aristocrats.md`
+- [ ] `wiki/投资品种/Circle-of-Competence.md`

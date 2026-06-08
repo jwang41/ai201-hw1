@@ -1,0 +1,201 @@
+# Raw Material 知识点收集提纲
+
+**更新日期：2026-04-16**
+
+本文件列出 `raw_material/` 下需要收集的主要知识点，按 wiki 分类组织。收集后可用 `/wealth-extract` 提炼成 wiki 条目。
+
+图例：
+- ✅ 已有 raw_material 或 wiki 条目覆盖
+- 🟡 部分覆盖，需补充
+- ❌ 待收集
+
+---
+
+## 一、账户类型（Account Types）
+
+### 1.1 美国退休账户
+- ✅ 401K（已有 wiki 条目）
+- ✅ Roth IRA（已有 wiki 条目）
+- ✅ Traditional IRA — [raw_material/退休账户/Traditional-IRA.md](退休账户/Traditional-IRA.md)
+- ✅ HSA（Health Savings Account）— [raw_material/退休账户/HSA.md](退休账户/HSA.md)
+- ✅ Solo 401K / SEP IRA — [raw_material/退休账户/Solo-401K-vs-SEP-IRA.md](退休账户/Solo-401K-vs-SEP-IRA.md)
+- ✅ Backdoor Roth IRA — [raw_material/退休账户/Backdoor-Roth-IRA.md](退休账户/Backdoor-Roth-IRA.md)
+- ✅ Mega Backdoor Roth — [raw_material/退休账户/Mega-Backdoor-Roth.md](退休账户/Mega-Backdoor-Roth.md)
+- ✅ 401K Rollover 规则 — [raw_material/退休账户/401K-Rollover.md](退休账户/401K-Rollover.md)
+
+### 1.2 美国应税账户
+- ✅ Brokerage + HYSA + CD + MMF — [raw_material/补充-账户提取赠与/应税账户基础.md](补充-账户提取赠与/应税账户基础.md)
+- ✅ SGOV（已有 wiki）
+- ✅ Betterment（已有 wiki）
+- ✅ I Bonds / TIPS — 已在 [投资品种-固定收益/Treasury-Securities.md](投资品种-固定收益/Treasury-Securities.md) 覆盖
+
+### 1.3 美国教育储蓄账户
+- ✅ 529 Plan — [raw_material/教育储蓄/529-Plan.md](教育储蓄/529-Plan.md)
+- ✅ Coverdell ESA + UTMA/UGMA — [raw_material/教育储蓄/Coverdell-ESA-UTMA-UGMA.md](教育储蓄/Coverdell-ESA-UTMA-UGMA.md)
+
+### 1.4 中国账户类型
+- ✅ 社保/公积金/企业年金/个人养老金 — [raw_material/补充-账户提取赠与/中国账户类型.md](补充-账户提取赠与/中国账户类型.md)
+- ✅ 银行理财/基金/券商 — 已在 [投资品种-中国/中国理财产品全景.md](投资品种-中国/中国理财产品全景.md) 覆盖
+
+---
+
+## 二、税务策略（Tax Strategies）
+
+### 2.1 基础税制
+- ✅ 联邦所得税税阶（2026 最新）— [raw_material/税务基础/联邦所得税税阶-2026.md](税务基础/联邦所得税税阶-2026.md)
+- ✅ 加州所得税税阶 — [raw_material/税务基础/加州所得税税阶.md](税务基础/加州所得税税阶.md)
+- ✅ 资本利得税：长期 vs 短期 — [raw_material/税务基础/资本利得税.md](税务基础/资本利得税.md)
+- ✅ 合格分红 vs 普通分红 — [raw_material/税务基础/合格分红vs普通分红.md](税务基础/合格分红vs普通分红.md)
+- ✅ NIIT（净投资收入附加税，3.8%）— [raw_material/税务基础/NIIT.md](税务基础/NIIT.md)
+- ✅ AMT（替代性最低税）— [raw_material/税务基础/AMT.md](税务基础/AMT.md)
+
+### 2.2 税务优化工具
+- ✅ 税损收割（已有 wiki）
+- ✅ Wash Sale Rule（已有 wiki）
+- ✅ Asset Location — [raw_material/税务优化/Asset-Location.md](税务优化/Asset-Location.md)
+- ✅ Backdoor Roth 转换操作细节 — 见 [raw_material/退休账户/Backdoor-Roth-IRA.md](退休账户/Backdoor-Roth-IRA.md)
+- ✅ Mega Backdoor Roth 转换 — 见 [raw_material/退休账户/Mega-Backdoor-Roth.md](退休账户/Mega-Backdoor-Roth.md)
+- ✅ Roth Conversion Ladder — [raw_material/税务优化/Roth-Conversion-Ladder.md](税务优化/Roth-Conversion-Ladder.md)
+- ✅ QBI Deduction — [raw_material/税务优化/QBI-Deduction.md](税务优化/QBI-Deduction.md)
+- ✅ DAF（Donor-Advised Fund） — [raw_material/税务优化/DAF-Donor-Advised-Fund.md](税务优化/DAF-Donor-Advised-Fund.md)
+- ✅ 1031 Exchange — [raw_material/税务优化/1031-Exchange.md](税务优化/1031-Exchange.md)
+
+### 2.3 股权激励税务
+- ✅ RSU 税务处理 — [raw_material/股权激励/RSU.md](股权激励/RSU.md)
+- ✅ ISO vs NSO 期权税务差异 — [raw_material/股权激励/ISO-vs-NSO.md](股权激励/ISO-vs-NSO.md)
+- ✅ ESPP 节税策略 — [raw_material/股权激励/ESPP.md](股权激励/ESPP.md)
+- ✅ 83(b) 选举 — [raw_material/股权激励/83(b)Election.md](股权激励/83(b)Election.md)
+
+### 2.4 跨境税务
+- ✅ FBAR 申报 — [raw_material/跨境税务/FBAR.md](跨境税务/FBAR.md)
+- ✅ FATCA 合规 — [raw_material/跨境税务/FATCA.md](跨境税务/FATCA.md)
+- ✅ Form 8938 申报 — [raw_material/跨境税务/Form-8938.md](跨境税务/Form-8938.md)
+- ✅ 中美税收协定 — [raw_material/跨境税务/中美税收协定.md](跨境税务/中美税收协定.md)
+- ✅ 外国税收抵免（FTC） — [raw_material/跨境税务/Foreign-Tax-Credit.md](跨境税务/Foreign-Tax-Credit.md)
+- ✅ PFIC 规则 — [raw_material/跨境税务/PFIC.md](跨境税务/PFIC.md)
+
+### 2.5 遗产与赠与
+- ✅ Estate Tax + Gift Tax + Step-up Basis — [raw_material/补充-账户提取赠与/遗产赠与税-提取策略.md](补充-账户提取赠与/遗产赠与税-提取策略.md)
+- ✅ Exit Tax — 已在 [身份税务/Exit-Tax.md](身份税务/Exit-Tax.md) 覆盖
+
+---
+
+## 三、投资品种（Investment Vehicles）
+
+### 3.1 股票与基金
+- ✅ ETF 总览（已有 wiki）
+- ✅ 杠杆 ETF（已有 wiki）
+- ✅ Index Fund vs ETF — [raw_material/投资品种-股票基金/Index-Fund-vs-ETF.md](投资品种-股票基金/Index-Fund-vs-ETF.md)
+- ✅ Target-Date Fund — [raw_material/投资品种-股票基金/Target-Date-Fund.md](投资品种-股票基金/Target-Date-Fund.md)
+- ✅ 个股选股框架 — [raw_material/投资品种-股票基金/个股选股框架.md](投资品种-股票基金/个股选股框架.md)
+- ✅ 主动 vs 被动投资 — [raw_material/投资品种-股票基金/主动vs被动投资.md](投资品种-股票基金/主动vs被动投资.md)
+- ✅ Dollar-Cost Averaging — [raw_material/投资品种-股票基金/DCA定投.md](投资品种-股票基金/DCA定投.md)
+
+### 3.2 固定收益
+- ✅ Treasury 全家族 — [raw_material/投资品种-固定收益/Treasury-Securities.md](投资品种-固定收益/Treasury-Securities.md)
+- ✅ Corporate + Muni Bonds — [raw_material/投资品种-固定收益/Corporate-Muni-Bonds.md](投资品种-固定收益/Corporate-Muni-Bonds.md)
+- ✅ Bond Ladder + Duration — [raw_material/投资品种-固定收益/Bond-Ladder-Duration.md](投资品种-固定收益/Bond-Ladder-Duration.md)
+
+### 3.3 另类投资
+- ✅ REITs — [raw_material/投资品种-另类/REITs.md](投资品种-另类/REITs.md)
+- ✅ Crypto + Gold + Commodities — [raw_material/投资品种-另类/Crypto-Gold-Commodities.md](投资品种-另类/Crypto-Gold-Commodities.md)
+- ✅ Options 策略（Covered Call / Put / Wheel） — [raw_material/投资品种-另类/Options-策略.md](投资品种-另类/Options-策略.md)
+- 🟡 Private Equity / Venture Capital — 属专业领域，暂不收集
+
+### 3.4 保险类产品
+- ✅ IUL（已有 wiki）
+- ✅ 其余保险已在 6.1 保险规划总纲覆盖（Term/Whole Life、Disability、LTC、Umbrella、Health）
+
+### 3.5 中国投资品种
+- ✅ A 股 + 港股 + Stock Connect — [raw_material/投资品种-中国/A股-港股-Stock-Connect.md](投资品种-中国/A股-港股-Stock-Connect.md)
+- ✅ 公募/私募/银行理财/货币基金/可转债 — [raw_material/投资品种-中国/中国理财产品全景.md](投资品种-中国/中国理财产品全景.md)
+
+---
+
+## 四、退休规划（Retirement Planning）
+
+### 4.1 退休框架与规则
+- ✅ 三段式退休框架（已有 wiki）
+- ✅ 4% Rule 与安全提取率 — [raw_material/退休规划/4%规则与安全提取率.md](退休规划/4%规则与安全提取率.md)
+- ✅ Sequence of Returns Risk — [raw_material/退休规划/Sequence-of-Returns-Risk.md](退休规划/Sequence-of-Returns-Risk.md)
+- ✅ Bucket Strategy — [raw_material/退休规划/Bucket-Strategy.md](退休规划/Bucket-Strategy.md)
+- ✅ Bond Tent / Glide Path — [raw_material/退休规划/Bond-Tent.md](退休规划/Bond-Tent.md)
+- ✅ FIRE 运动 — [raw_material/退休规划/FIRE运动.md](退休规划/FIRE运动.md)
+
+### 4.2 社保与医保
+- ✅ Social Security 领取策略 — [raw_material/社保医保/Social-Security-领取策略.md](社保医保/Social-Security-领取策略.md)
+- ✅ WEP/GPO（2025 已废除）— [raw_material/社保医保/WEP-GPO.md](社保医保/WEP-GPO.md)
+- ✅ Medicare A/B/C/D + Medigap — [raw_material/社保医保/Medicare-ABCD-Medigap.md](社保医保/Medicare-ABCD-Medigap.md)
+- ✅ ACA Marketplace — [raw_material/社保医保/ACA-Marketplace.md](社保医保/ACA-Marketplace.md)
+- ✅ COBRA — [raw_material/社保医保/COBRA.md](社保医保/COBRA.md)
+
+### 4.3 提取策略
+- ✅ 年金（已有 wiki）
+- ✅ Rule 72(t) + RMD + Decumulation 顺序 — [raw_material/补充-账户提取赠与/遗产赠与税-提取策略.md](补充-账户提取赠与/遗产赠与税-提取策略.md)
+- ✅ Roth Conversion Ladder — 已在 [税务优化/Roth-Conversion-Ladder.md](税务优化/Roth-Conversion-Ladder.md) 覆盖
+
+### 4.4 遗产规划
+- ✅ Will（遗嘱基础）— [raw_material/遗产规划/Will-遗嘱.md](遗产规划/Will-遗嘱.md)
+- ✅ Trust 类型 — [raw_material/遗产规划/Trust-类型.md](遗产规划/Trust-类型.md)
+- ✅ Beneficiary Designations — [raw_material/遗产规划/Beneficiary-Designation.md](遗产规划/Beneficiary-Designation.md)
+- ✅ Power of Attorney（财务/医疗）+ Healthcare Directive + HIPAA — [raw_material/遗产规划/Power-of-Attorney.md](遗产规划/Power-of-Attorney.md)
+- ✅ 数字遗产管理 — [raw_material/遗产规划/数字遗产管理.md](遗产规划/数字遗产管理.md)
+
+### 4.5 中国退休要素
+- ✅ 中国退休/社保/医保 — 已在 [补充-账户提取赠与/中国账户类型.md](补充-账户提取赠与/中国账户类型.md) 和 [身份税务/退休回国税务.md](身份税务/退休回国税务.md) 覆盖
+
+---
+
+## 五、中美对比（China-US Comparison）
+
+### 5.1 宏观体系
+- ✅ 中美财富管理体系对比（已有 raw_material）
+- ✅ 国内外理财对比调研（已有 raw_material）
+- ✅ 双边资产策略（已有 wiki）
+
+### 5.2 跨境操作细节
+- ✅ 购汇$5万 + 汇款 + 汇率 — [raw_material/跨境操作/购汇额度与汇款通道.md](跨境操作/购汇额度与汇款通道.md)
+- ✅ 双边账户/申报义务 — 已在 FBAR/FATCA/Form-8938 文件覆盖
+
+### 5.3 身份与税务
+- ✅ 绿卡 vs 公民 vs 非居民税务差异 — [raw_material/身份税务/绿卡vs公民vs非居民.md](身份税务/绿卡vs公民vs非居民.md)
+- ✅ 183 天规则（Substantial Presence Test） — [raw_material/身份税务/183天规则.md](身份税务/183天规则.md)
+- ✅ 双重税务居民 + Form 8833 — [raw_material/身份税务/双重居民.md](身份税务/双重居民.md)
+- ✅ Exit Tax / 放弃身份 — [raw_material/身份税务/Exit-Tax.md](身份税务/Exit-Tax.md)
+- ✅ 退休后回国税务 — [raw_material/身份税务/退休回国税务.md](身份税务/退休回国税务.md)
+
+### 5.4 跨境资产类别
+- ✅ 跨境资产全类型（房产/股票/保险/继承/银行）— [raw_material/跨境操作/跨境资产申报与处理.md](跨境操作/跨境资产申报与处理.md)
+
+---
+
+## 六、横向主题（跨多个分类）
+
+### 6.1 家庭财务基础
+- ✅ 紧急基金（3-6个月支出）— [raw_material/家庭财务基础/紧急基金.md](家庭财务基础/紧急基金.md)
+- ✅ 现金流预算方法 — [raw_material/家庭财务基础/现金流预算.md](家庭财务基础/现金流预算.md)
+- ✅ 净资产追踪 — [raw_material/家庭财务基础/净资产追踪.md](家庭财务基础/净资产追踪.md)
+- ✅ 保险规划总纲 — [raw_material/家庭财务基础/保险规划总纲.md](家庭财务基础/保险规划总纲.md)
+
+### 6.2 债务管理
+- ✅ 房贷 + 学贷 + 信用卡 — [raw_material/补充-家庭财务/债务管理.md](补充-家庭财务/债务管理.md)
+
+### 6.3 教育规划
+- ✅ 大学费用 + FAFSA + 中美教育对比 — [raw_material/补充-家庭财务/教育规划与风险管理.md](补充-家庭财务/教育规划与风险管理.md)
+
+### 6.4 风险管理
+- ✅ 职业/健康/法律/通胀风险 — [raw_material/补充-家庭财务/教育规划与风险管理.md](补充-家庭财务/教育规划与风险管理.md)
+
+---
+
+## 收集方式建议
+
+1. **优先级**：先补 2.1（基础税制）、1.1（美国退休账户其他类型）、4.1（退休框架）——这些是策略层决策的基础
+2. **来源**：
+   - IRS.gov / Social Security 官网（权威）
+   - Bogleheads Wiki、Investopedia（框架性）
+   - Fidelity / Vanguard / Schwab Learning Center（产品细节）
+   - 中国：国家税务总局、社保局、外汇管理局
+   - 中文社区：虎嗅、知乎专栏、一亩三分地
+3. **入库方式**：按主题保存为 `raw_material/<主题>.md`，保留原文和链接
+4. **下一步**：`/wealth-extract raw_material/<新文章>.md` 提炼到 wiki

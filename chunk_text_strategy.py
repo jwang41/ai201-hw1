@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Iterable
 
@@ -88,6 +89,10 @@ def create_chunk_id(source_path: str, chunk_index: int) -> str:
 
 
 def main() -> None:
+    # Ensure UTF-8 encoding for console output (handles Chinese characters on Windows)
+    if sys.stdout.encoding != "utf-8":
+        sys.stdout.reconfigure(encoding="utf-8")
+    
     parser = argparse.ArgumentParser(
         description="Implement chunking strategy: 400-token chunks with 80-token overlap."
     )
